@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doggy Inscription</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1 id="title">Dog Registration</h1>
+        <p id="description">This is a form to resgistrate a dog Owner and his Doggy cause my gf likes dogs</p>
+    </header>
+    <form id="survey-form">
+        <div class="container">
+            <div class="item Owner">
+                <h1>OWNER</h1>
+                <label id="name-label">Name:<input id="name" type="text" placeholder="your name.." required ></label>
+                <label id="email-label">Email:<input id="email" type="email" placeholder="example@gmail.com..." required></label>
+                <label id="number-label">age:<input id="number" type="number" min=15 max=80 placeholder="#...." required></label>
+                <label>Ocupation:
+                <select id="dropdown">
+                    <option value="">(Select one)</option>
+                    <option value="1">Student</option>
+                    <option value="1">Employee</option>
+                    <option value="1">None</option>
+                </select>
+            </label>
+            <fieldset>Status:
+                <label ><input value="single" type="radio" name="Status" id="single" checked>Single</label>
+                <label ><input value="maried" type="radio" name="Status" id="single">Maried</label>
+            </fieldset>
+            <label >
+                <input type="checkbox" value="accepted" name="terms-and-conditions" id="terms-and-conditions" required> I accept the terms and conditions
+            </label>
+            <label >
+                <input type="checkbox" value="readed" name="terms-and-conditions" id="terms-and-conditions" required> I read the terms and conditions
+            </label>
+            </div>
+            <div class="item doggy"> 
+                <h1>DOGGY</h1>
+                <label id="dog-name-label">Name:<input id="dog-name" type="text" placeholder="sparky.." required ></label>
+                <label id="dog-raze-label">Raze:<input id="dog-raze" type="text" placeholder="chihuahua..." required></label>
+                <label id="dog-age-number-label">age:<input id="dog-age" type="number" min=0 max=20 placeholder="#...." required></label>
+                <label >Short description about your dog:</label>
+                <textarea name="description" id="description" cols="20" rows="6"></textarea>
+            </div>
+        </div>
+        
+        <button type="submit" id="submit">Submit</button>
+        
+    </form>
+</body>
+</html>
