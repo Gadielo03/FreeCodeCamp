@@ -1,0 +1,180 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+header{
+    height: 10vh;
+    width: 100%;
+    background-color: #79B4B7;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10%;
+    position: sticky;
+    top: 0;
+    font-size: 0.9rem;
+    z-index: 100;
+}
+
+header h1{
+    color: #FEFBF3;
+}
+
+nav{
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav ul{
+    display: flex;
+    list-style: none;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+
+nav ul li{
+    margin: auto;
+    padding: 0.5rem;
+    cursor: pointer;
+    display: block;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: #FEFBF3;
+    font-weight: bold;
+}
+
+body{
+    background-color: #FEFBF3;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+main{
+    padding-top: 40px;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+#Description{
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 50px;
+    padding: 10px;
+    border-radius:15px;
+}
+
+#img-div{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+   
+}
+#img-caption{
+    display: flex;
+    justify-content: center;
+    padding-top:10px;
+}
+
+#tribute-info{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 40%;
+    padding: 15px 5px;
+}
+
+
+#image{
+    border-radius: 800px;
+    max-width: 600px;
+    width: 100%;
+    height: auto;
+    box-shadow: 0 0 20px 1px black;
+    display: block;
+}
+
+#Badges-info{
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+#Badge{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    padding: 30px 20px;
+    border-radius: 20px;
+    background-color: #F8F0DF;
+    align-items: center;
+}
+
+#Badge p{
+    padding: 10px 20px 10px 25px; 
+    text-align: left;
+}
+
+#Badge img{
+    filter: drop-shadow(0 0 5px black);
+}
+
+.bold{
+    font-weight: bold;
+}
+
+#Versions{
+    width: 90%;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+#Versions img{
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 0 0 10px 1px black;
+    display: block;
+    margin: 20px 0;
+}
+
+footer{
+    height: 8vh;
+    width: 100%;
+    background-color: #79B4B7;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    bottom: 0;
+    font-size: 0.9rem;
+    color: #FEFBF3;
+    padding: 0 20%;
+}
+
+footer a{
+    color: #fff6ddfd;
+    text-decoration: none;
+    font-weight: bold;
+}
