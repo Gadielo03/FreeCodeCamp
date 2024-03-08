@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Techinal Documentation :)</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="head-principal">
+        <h1>Technical Documentation</h1>
+    </header>
+    <div class="container">
+    <nav id="navbar">
+        <header>
+            <h3>PSEINT Documentation</h3>
+        </header>
+        <div class="nav-container">
+            <a class ="nav-link" href="#Pseudo_código">Pseudo código</a>
+            <a class ="nav-link" href="#Asignación">Asignación</a>
+            <a class ="nav-link" href="#Entradas">Entradas</a>
+            <a class ="nav-link" href="#Salidas">Salidas</a>
+            <a class ="nav-link" href="#Dimensionamiento">Dimensionamiento</a>
+            <a class ="nav-link" href="#Condicional_Si_Entonces">Condicional Si Entonces</a>
+            <a class ="nav-link" href="#Selección_Multiple">Selección Multiple</a>
+            <a class ="nav-link" href="#Lazos_Mientras">Lazos Mientras</a>
+            <a class ="nav-link" href="#Lazos_Repetir">Lazos Repetir</a>
+            <a class ="nav-link" href="#Lazos_Para">Lazos Para</a>
+            <a class ="nav-link" href="#Operadores_y_Funciones">Operadores y Funciones</a>
+            <a class ="nav-link" href="#Observaciones">Observaciones</a>
+        </div>
+
+        <div class="social">
+            <p>Gadielo03 -></p>
+            <a href="https://github.com/Gadielo03"><img src="./git-Logo.png" alt=""></a>
+        </div>
+    </nav>
+    <main id="main-doc">
+        <section id="Pseudo_código" class="main-section">
+            <header>
+                <h1>Pseudo código</h1>
+            </header>
+            <br>
+           <p>Las características de este pseudolenguaje fueron propuestas en 2001 por el responsable de la asignatura Fundamentos de Programación de la carrera de Ingeniería Informática de la FICH-UNL. Las premisas son:</p>
+           <br>
+           <ul>
+            <li>Sintaxis sencilla</li>
+            <li>Manejo de las estructuras básicas de control</li>
+            <li>Solo 3 tipos de datos básicos: numérico, caracter /cadenas de caracteres y lógico (verdadero-falso).</li>
+            <li>Estructuras de datos: arreglos</li>
+           </ul>
+           <br>
+           <p>Todo algoritmo en pseudocógido tiene la siguiente estructura general:</p>
+            <br>
+            <pre>
+                <code>
+    Proceso SinTitulo
+        accion 1;
+        accion 1;
+                .
+                .
+                .
+        accion n;
+     FinProceso
+                </code>
+            </pre>
+            <br>
+            <p>Comienza con la palabra clave Proceso seguida del nombre del programa, luego le sigue una secuencia de instrucciones y finaliza con la palabra FinProceso. Una secuencia de instrucciones es una lista de una o más instrucciones, cada una terminada en punto y coma.</p>
+            <br>
+            <p>Las acciones incluyen operaciones de entrada y salida, asignaciones de variables, condicionales si-entonces o de selección múltiple y/o lazos mientras, repetir o para.</p>
+            <br>
+            <br>
+        </section>
+        <section id="Asignación" class="main-section">
+            <header>
+                <h1>Asignación</h1>
+            </header>
+            <br>
+            <p>La instrucción de asignación permite almacenar una valor en una variable.</p>
+            <br>
+            <pre>
+                <code>
+    < variable> <- < expresión> ;   
+                </code>
+            </pre>
+            <br>
+            <p>Al ejecutarse la asignación, primero se evalúa la expresión de la derecha y luego se asigna el resultado a la variable de la izquierda. El tipo de la variable y el de la expresión deben coincidir.</p>
+            <br>
+            <br>
+        </section>
+        <section id="Entradas" class="main-section">
+            <header>
+                <h1>Entradas</h1>
+            </header>
+            <br>
+            <p>La instrucción Leer permite ingresar información desde el ambiente.</p>
+            <br>
+            <pre>
+                <code>
+    Leer < variablel> , < variable2> , ... ,
+    < variableN> ;        
+                </code>
+            </pre>
+            <br>
+            <p>Esta instrucción lee N valores desde el ambiente (en este caso el teclado) y los asigna a las N variables mencionadas. Pueden incluirse una o más variables, por lo tanto el comando leerá uno o más valores.</p>
+            <br>
+            <br>
+        </section>
+    <section id="Salidas" class="main-section">
+        <header>
+            <h1>Salidas</h1>
+        </header>
+        <br>
+        <p>La instrucción Escribir permite mostrar valores al ambiente.</p>
+        <br>
+        <pre>
+            <code>
+    escribir < exprl> , < expr2> , ... , < exprN> ;            
+            </code>
+        </pre>
+        <br>
+        <p>Esta instrucción imprime al ambiente (en este caso en la pantalla) los valores obtenidos de evaluar N expresiones. Dado que puede incluir una o más expresiones, mostrará uno o más valores.</p>
+        <br>
+        <br>
+    </section>
+    <section id="Dimensionamiento" class="main-section">
+        <header>
+            <h1>Dimensionamiento</h1>
+        </header>
+        <br>
+        <p>La instrucción Dimension permite definir un arreglo, indicando sus dimensiones.</p>
+        <br>
+        <pre>
+            <code>
+    Dimension  < identificador> (< maxl>,...,< maxN>);            
+            </code>
+        </pre>
+        <br>
+        <p>Esta instrucción define un arreglo con el nombre indicado en < indentificador> y N dimensiones. Los N parámetros indican la cantidad de dimensiones y el valor máximo de cada una de ellas. La cantidad de dimensiones puede ser una o más, y la máxima cantidad de elementos debe ser una expresión numérica positiva.
+            Se pueden definir más de un arreglo en una misma instrucción, separándolos con una coma (,).</p>
+        <br>
+            <pre>
+            <code>
+                Dimension < ident1> (< max11>,...,< max1N>),..., < identM> (< maxM1>,...,< maxMN>)            
+            </code>
+        </pre>
+        <br>
+        <p>Es importante notar que es necesario definir un arreglo antes de utilizarlo.</p>
+        <br>
+        <br>
+        </section>
+        <section id="Condicional_Si_Entonces" class="main-section">
+            <header>
+                <h1>Condicional Si Entonces</h1>
+            </header>
+            <br>
+            <p>La secuencia de instrucciones ejecutadas por la instrucción Si-Entonces-Sino depende del valor de una condición lógica.</p>
+            <br>
+            <pre>
+                <code>
+    Si < condición>
+        Entonces
+            < instrucciones>
+        Sino
+            < instrucciones>
+    FinSi                
+                </code>
+            </pre>
+            <br>
+            <p>Al ejecutarse esta instrucción, se evalúa la condición y se ejecutan las instrucciones que correspondan: las instrucciones que le siguen al Entonces si la condición es verdadera, o las instrucciones que le siguen al Sino si la condición es falsa. La condición debe ser una expresión lógica, que al ser evaluada retorna Verdadero o Falso.
+                La cláusula Entonces debe aparecer siempre, pero la cláusla Sino puede no estar. En ese caso, si la condición es falsa no se ejecuta ninguna instrucción y la ejecución del programa continúa con la instrucción siguiente.</p>
+            <br>
+            <br>
+            </section>
+            <section id="Selección_Multiple" class="main-section">
+                <header>
+                    <h1>Selección Multiple</h1>
+                </header>
+                <br>
+                <p>La secuencia de instrucciones ejecutada por una instrucción Segun depende del valor de una variable numérica.</p>
+                <br>
+                <pre>
+                    <code>
+    Segun < variable> Hacer
+        < número1>: < instrucciones>
+        < número2>,< número3>: < instrucciones>
+        <...>
+        De Otro Modo: < instrucciones>
+    FinSegu
+                    </code>
+                </pre>
+                <br>
+                <p>Esta instrucción permite ejecutar opcionalmente varias acciones posibles, dependiendo del valor almacenado en una variable de tipo numérico. Al ejecutarse, se evalúa el contenido de la variable y se ejecuta la secuencia de instrucciones asociada con dicho valor.</p>
+                <br>
+                <p>Cada opción está formada por uno o más números separados por comas, dos puntos y una secuencia de instrucciones. Si una opción incluye varios números, la secuencia de instrucciones asociada se debe ejecutar cuando el valor de la variable es uno de esos números.</p>
+                <br>
+                <p>Opcionalmente, se puede agregar una opción final, denominada De Otro Modo, cuya secuencia de instrucciones asociada se ejecutará sólo si el valor almacenado en la variable no coincide con ninguna de las opciones anteriores.</p>
+                <br>
+                <br>
+            </section>
+            <section id="Lazos_Mientras" class="main-section">
+                <header>
+                    <h1>Lazos Mientras</h1>
+                </header>
+                <br>
+                <p>La instrucción Mientras ejecuta una secuencia de instrucciones mientras una condición sea verdadera.</p>
+                <br>
+                <pre>
+                    <code>
+    Mientras < condición> Hacer
+        < instrucciones>
+    FinMientras                   
+                    </code>
+                </pre>
+                <br>
+                <p>Al ejecutarse esta instrucción, la condición es evaluada. Si la condición resulta verdadera, se ejecuta una vez la secuencia de instrucciones que forman el cuerpo del ciclo. Al finalizar la ejecución del cuerpo del ciclo se vuelve a evaluar la condición y, si es verdadera, la ejecución se repite. Estos pasos se repiten mientras la condición sea verdadera.</p>
+                <br>
+                <p>Note que las instrucciones del cuerpo del ciclo pueden no ejecutarse nunca, si al evaluar por primera vez la condición resulta ser falsa.</p>
+                <br>
+                <p>Si la condición siempre es verdadera, al ejecutar esta instrucción se produce un ciclo infinito. A fin de evitarlo, las instrucciones del cuerpo del ciclo deben contener alguna instrucción que modifique la o las variables involucradas en la condición, de modo que ésta sea falsificada en algún momento y así finalice la ejecución del ciclo.</p>
+                <br>
+                <br>
+            </section>
+            <section id="Lazos_Repetir" class="main-section">
+                <header>
+                    <h1>Lazos Repetir</h1>
+                </header>
+                <br>
+                <p>La instrucción Repetir-Hasta Que ejecuta una secuencia de instrucciones hasta que la condición sea verdadera.</p>
+                <br>
+                <pre>
+                    <code>
+    Repetir
+        < instrucciones>
+    Hasta Que < condición>   
+                    </code>
+                </pre>
+                <br>
+                <p>Al ejecutarse esta instrucción, la secuencia de instrucciones que forma el cuerpo del ciclo se ejecuta una vez y luego se evalúa la condición. Si la condición es falsa, el cuerpo del ciclo se ejecuta nuevamente y se vuelve a evaluar la condición. Esto se repite hasta que la condición sea verdadera.</p>
+                <br>
+                <p>Note que, dado que la condición se evalúa al final, las instrucciones del cuerpo del ciclo serán ejecutadas al menos una vez.</p>
+                <br>
+                <p>Además, a fin de evitar ciclos infinitos, el cuerpo del ciclo debe contener alguna instrucción que modifique la o las variables involucradas en la condición de modo que en algún momento la condición sea verdadera y se finalice la ejecución del ciclo.</p>
+                <br>
+                <br>
+            </section>
+            <section id="Lazos_Para" class="main-section">
+                <header>
+                    <h1>Lazos Para</h1>
+                </header>
+                <br>
+                <p>La instrucción Para ejecuta una secuencia de instrucciones un número determinado de veces.</p>
+                <br>
+                <pre>
+                    <code>
+    Para < variable> <- < inicial> Hasta < final> ( Con Paso < paso> ) Hacer
+        < instrucciones>
+    FinPara   
+                    </code>
+                </pre>
+                <br>
+                <p>Al ingresar al bloque, la variable < variable> recibe el valor < inicial> y se ejecuta la secuencia de instrucciones que forma el cuerpo del ciclo. Luego se incrementa la variable < variable> en < paso> unidades y se evalúa si el valor almacenado en < variable> superó al valor < final>. Si esto es falso se repite hasta que < variable> supere a < final>. Si se omite la cláusula Con Paso < paso>, la variable < variable> se incrementará en 1.</p>
+                <br>
+                <br>
+            </section>
+            <section id="Operadores_y_Funciones" class="main-section">
+                <header>
+                    <h1>Operadores y Funciones</h1>
+                </header>
+                <br>
+                <p>Este pseudolenguaje dispone de un conjunto básico de operadores y funciones que pueden ser utilizados para la construcción de expresiones más o menos complejas.
+                Las siguientes tablas exhiben la totalidad de los operadores de este lenguaje reducido:</p>
+                <br>
+                <table>
+                    <thead>
+                        <th>Operador</th>
+                        <th>Significado</th>
+                        <th>Ejemplo</th>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th>Relacionales</th>
+                        </tr>
+                        <tr>
+                            <th> > </th>
+                            <td> Mayor que </td>
+                            <td> 3>2 </td>
+                        </tr>
+                        <tr>
+                            <th> < </th>
+                            <td> Menor que </td>
+                            <td>  'ABC'<'abc </td>
+                        </tr>
+                        <tr>
+                            <th> = </th>
+                            <td> Igual que </td>
+                            <td>  4=3 </td>
+                        </tr>
+                        <tr>
+                            <th> <= </th>
+                            <td> Menor o igual que </td>
+                            <td>  'a'<='b' </td>
+                        </tr>
+                        <tr>
+                            <th> >= </th>
+                            <td> Mayor o igual que </td>
+                            <td>   4>=5 </td>
+                        </tr>
+                        <tr>
+                            <th> Logicos </th>
+                        </tr>
+                        <tr>
+                            <th> & ó Y </th>
+                            <td> Conjunción (y). </td>
+                            <td> (7>4) & (2=1) //falso </td>
+                        </tr>
+                        <tr>
+                            <th> | ó O </th>
+                            <td> Disyunción (o). </td>
+                            <td> (1=1 | 2=1) //verdadero </td>
+                        </tr>
+                        <tr>
+                            <th> ~ ó NO </th>
+                            <td> Negación (no). </td>
+                            <td>  ~(2<5) //falso </td>
+                        </tr>
+                        <tr>
+                            <th> Algebraicos </th>
+                        </tr>
+                        <tr>
+                            <th> + </th>
+                            <td> Suma </td>
+                            <td>  3+4 </td>
+                        </tr>
+                        <tr>
+                            <th> - </th>
+                            <td> Resta </td>
+                            <td>  5-2 </td>
+                        </tr>
+                        <tr>
+                            <th> * </th>
+                            <td> Multiplicación </td>
+                            <td>  3*4 </td>
+                        </tr>
+                        <tr>
+                            <th> / </th>
+                            <td> División </td>
+                            <td>  6/2 </td>
+                        </tr>
+                        <tr>
+                            <th> ^</th>
+                            <td> Potenciación </td>
+                            <td>   3.41 * radio ^ 2 </td>
+                        </tr>
+                        <tr>
+                            <th> % ó MOD</th>
+                            <td> Módulo (resto de la división entera)  </td>
+                            <td>   num MOD div </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <br>
+                <p>La jerarquía de los operadores matemáticos es igual a la del álgebra, aunque puede alterarse mediante el uso de paréntesis.</p>
+                <br>
+                <p>A continuación se listan las funciones integradas disponibles:</p>
+                <br>
+                <table>
+                    <thead>
+                        <th>Función</th>
+                        <th>Significado</th>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th> RC(X) </th>
+                            <td> Raíz Cuadrada de X </td>
+                        </tr>
+                        <tr>
+                            <th> ABS(X) </th>
+                            <td> Valor Absoluto de X </td>
+                        </tr>
+                        <tr>
+                            <th> LN(X) </th>
+                            <td> Logaritmo Natural de X </td>
+                        </tr>
+                        <tr>
+                            <th> EXP(X) </th>
+                            <td> Función Exponencial de X</td>
+                        </tr>
+                        <tr>
+                            <th> SEN(X) </th>
+                            <td> Seno de X</td>
+                        </tr>
+                        <tr>
+                            <th> COS(X) </th>
+                            <td> Coseno de X</td>
+                        </tr>
+                        <tr>
+                            <th> ATAN(X) </th>
+                            <td> Arcotangente de X</td>
+                        </tr>
+                        <tr>
+                            <th> TRUNC(X) </th>
+                            <td> Parte entera de X</td>
+                        </tr>
+                        <tr>
+                            <th> REDON(X) </th>
+                            <td> Entero más cercano a X</td>
+                        </tr>
+                        <tr>
+                            <th> AZAR(X) </th>
+                            <td> Entero aleatorio entre 0 y X-1</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <br>
+                <br>
+            </section>
+            <section id="Observaciones" class="main-section">
+                <header  >
+                    <h1>Observaciones</h1>
+                </header>
+                <br>
+                <ul>
+                    <li>Se pueden introducir comentarios luego de una instrucción, o en líneas separadas, mediante el uso de la doble barra ( // ). Todo lo que precede a //, hasta el fin de la línea, no será tomado en cuenta al interpretar el algoritmo.</li>
+                    <br>
+                    <li>Notese que no puede haber instrucciones fuera del programa, aunque si comentarios.</li>
+                    <br>
+                    <li>Las estructuras no secuenciales pueden anidarse. Es decir, pueden contener otras adentro, pero la estructura contenida debe comenzar y finalizar dentro de la contenedora.</li>
+                    <br>
+                    <li>Los identificadores, o nombres de variables, deben constar sólo de letras y números, comenzando siempre con una letra, y no pueden ser palabras reservadas (como para, mientras, y, no, etc...)</li>
+                    <br>
+                    <li>Las constantes de tipo carácter se escriben entre comillas ( " ).</li>
+                    <br>
+                    <li>En las constantes numéricas, el punto ( . ) es el separador decimal.</li>
+                    <br>
+                    <li>Las constantes lógicas son Verdadero y Falso.</li>
+                </ul>
+            </section>
+    </main>
+    </div>
+    <footer>
+        <p>Made with love by Gady :)</p>
+    </footer>
+</body>
+</html>
